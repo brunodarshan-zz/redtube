@@ -8,6 +8,9 @@ module Redtube
     @@source = "redtube"
     @@params = { output: "json" }
 
+
+    # private
+
     def call(url)
       response = RestClient.get(url)
       if response.code == 200
@@ -33,7 +36,5 @@ module Redtube
       @@params[:data] = data
       call build @@params
     end
-
-
   end
 end
