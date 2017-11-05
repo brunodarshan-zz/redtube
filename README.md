@@ -9,7 +9,7 @@ For a better use this gem, see the [API Documentation](https://api.redtube.com/d
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'redtube'
+gem 'redtube', git: 'git://github.com/brunodarshan/redtube.git'
 ```
 
 And then execute:
